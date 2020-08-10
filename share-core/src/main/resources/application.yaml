@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: share
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.5:3306/share?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: jule123
+server:
+  port: 9000
+  tomcat:
+    uri-encoding: UTF-8
