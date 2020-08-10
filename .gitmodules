@@ -1,0 +1,3 @@
+[submodule "share-ui"]
+	path = share-ui
+	url = https://github.com/Veryfirefly/share-ui.git
