@@ -1,5 +1,6 @@
 package cool.likeu.share.mapper;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import cool.likeu.share.dao.Movie;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,4 +29,10 @@ class TestShareMovieMapper {
         assertTrue(insert > 0);
     }
 
+    @Test
+    void testPageSelectMovieMapperAction() {
+
+        Page<Movie> pageable = shareMovieMapper.selectPage(new Page<>(1, 2), null);
+        System.out.println(pageable);
+    }
 }

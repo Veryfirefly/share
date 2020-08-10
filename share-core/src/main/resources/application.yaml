@@ -10,3 +10,5 @@ server:
   port: 9000
   tomcat:
     uri-encoding: UTF-8
+  servlet:
+    context-path: /share

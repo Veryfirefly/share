@@ -19,5 +19,6 @@ create table t_share_movie(
     create_time timestamp not null default current_timestamp comment '创建时间',
     modify_time timestamp not null default current_timestamp on update current_timestamp comment '更新时间',
     primary key (id),
-    key `score` (score)
+    key `score` (score),
+    unique key (title)
 )engine=innodb charset=utf8 comment '电影表';
