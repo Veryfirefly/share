@@ -21,7 +21,7 @@ public class User implements Serializable {
     private String password;
 
     @TableField("nickname")
-    private String nickName;
+    private String nickname;
 
     @TableField("create_time")
     private Date createTime;
@@ -53,12 +53,12 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getNickName() {
-        return nickName;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public Date getCreateTime() {
@@ -83,7 +83,7 @@ public class User implements Serializable {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", nickName='" + nickName + '\'' +
+                ", nickname='" + nickname + '\'' +
                 ", createTime=" + createTime +
                 ", modifyTime=" + modifyTime +
                 '}';

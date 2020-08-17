@@ -1,0 +1,31 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST http://localhost:9000/share/movie
+Content-Type: application/json;charset=utf-8
+
+{
+  "title": "乐队的夏天2",
+  "description": "一起high起来",
+  "url": "https://www.iqiyi.com/v_zbczp2i0t0.html?vfm=2008_aldbd&fv=p_02_01",
+  "cover_image_url": "https://dss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2445370221,3474764528&fm=58&app=83&f=JPEG?w=150&h=200&s=2A30BBA848F7C3FBCFB000980300D0A2",
+  "score": 8.1
+}
+
+###
+GET http://localhost:9000/share/movie/search?keyword=乐队
+
+###
+
+GET http://localhost:9000/share/movie/7
+
+###
+
+GET http://localhost:9000/share/movie/list?current=2&size=5
+
+###

@@ -20,7 +20,7 @@ class TestShareUserMapper {
         User testUserBean = new User();
         testUserBean.setUsername("xiaoyu");
         testUserBean.setPassword(DigestUtils.md5DigestAsHex("xiaoyu123".getBytes()));
-        testUserBean.setNickName("XiaoYu");
+        testUserBean.setNickname("XiaoYu");
 
         int insertVal = shareUserMapper.insert(testUserBean);
         assertTrue(insertVal > 0);

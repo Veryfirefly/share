@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -23,6 +24,8 @@ public class Movie implements Serializable {
     @TableField("url")
     private String url;
 
+    // TODO JSON Field Property Split
+    @JsonProperty("cover_image_url")
     @TableField("cover_image_url")
     private String coverImageUrl;
 

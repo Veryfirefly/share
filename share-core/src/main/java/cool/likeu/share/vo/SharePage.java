@@ -2,6 +2,7 @@ package cool.likeu.share.vo;
 
 import java.util.List;
 
+@Deprecated
 public class SharePage<T> {
 
     private Long current;

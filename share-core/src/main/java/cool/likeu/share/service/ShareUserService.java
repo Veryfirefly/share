@@ -1,7 +1,8 @@
 package cool.likeu.share.service;
 
-public interface ShareUserService {
+import com.baomidou.mybatisplus.extension.service.IService;
+import cool.likeu.share.dao.User;
 
-
+public interface ShareUserService extends IService<User> {
 
 }

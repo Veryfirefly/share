@@ -10,7 +10,6 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <groupId>cool.likeu.share</groupId>
   <artifactId>share-core</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -45,6 +44,34 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+
+    <!-- TODO deprecated -->
+    <dependency>
+      <groupId>org.crazycake</groupId>
+      <artifactId>shiro-redis-spring-boot-starter</artifactId>
+      <version>3.2.1</version>
+    </dependency>
+    <!-- TODO deprecated -->
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>5.3.3</version>
+    </dependency>
+
+    <!-- jwt -->
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt</artifactId>
+      <version>0.9.1</version>
     </dependency>
   </dependencies>
 
